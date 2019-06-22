@@ -124,7 +124,7 @@
 .main__img {
   width: 100%;
   margin-top: 30px;
-  background: url(../../img/display.png) no-repeat;
+  background: url(./img/display.png) no-repeat;
   background-size: 80%;
   background-position: top; }
 
@@ -246,7 +246,7 @@
     bottom: 24px;
     border-radius: 50%;
     right: 16px;
-    background: url(../../img/btn.png);
+    background: url(./img/btn.png);
     background-repeat: no-repeat;
     background-position: center;
     background-color: #52C9EC; }
