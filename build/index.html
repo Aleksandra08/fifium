@@ -6,16 +6,17 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js" defer></script>
+    <script src="js/wow.min.js"></script>
+    <script>new WOW().init();</script>
     <link rel="stylesheet" type="text/css" href="css/main.css">
     <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="//atmpl.ru/design/scroll-effect/2015/anijs/anicollection.css"/>
+    <link rel="stylesheet" media="all" href="css/animate.css">
     <title>Document</title>
 </head>
 <body>
 <div id="particles-js"></div>
 <div id="page-wrapper">
-    <header class="header"
-            data-anijs="if:scroll, on:window, do: slideInUp animated,before: scrollReveal, after: removeAnim">
+    <header class="header slideInUp wow">
         <div class="header__box">
             <div class="header__btn nav__controls">
                 <button class="toggle" id="button">
@@ -238,8 +239,7 @@
     
         <h1 class="footer__header"> contact us </h1>
         <div class="footer__box contacts">
-            <div class="contacts__container"
-                 data-anijs="if:wheel, on:window, do: bounceInLeft animated,before: scrollReveal, after: removeAnim">
+            <div class="contacts__container bounceInLeft wow">
                 <div class="box-img">
                     <img src="./img/phone.png">
                 </div>
@@ -251,8 +251,7 @@
                 </div>
                 <div class="text"> contact@fifium.com</div>
             </div>
-            <div class="contacts__container"
-                 data-anijs="if:wheel, on:window, do: bounceInRight animated,before: scrollReveal, after: removeAnim">
+            <div class="contacts__container bounceInRight wow">
                 <div class="box-img">
                     <img src="./img/adress.png">
                 </div>
@@ -260,20 +259,17 @@
             </div>
         </div>
         <div class="contact-field">
-            <div class="footer__box email"
-                 data-anijs="if:wheel, on:window, do: bounceInLeft animated,before: scrollReveal, after: removeAnim">
+            <div class="footer__box email bounceInLeft wow">
                 <span class="input-rect"></span><input class="email__input" type="text" placeholder="Name">
             </div>
-            <div class="footer__box email"
-                 data-anijs="if:wheel, on:window, do: bounceInRight animated,before: scrollReveal, after: removeAnim">
+            <div class="footer__box email bounceInRight wow">
                 <span class="input-rect"></span><input class="email__input" type="email" placeholder="E-mail">
             </div>
             <div class="footer__box email">
                 <span class="input-rect"></span><input class="email__input" type="text" placeholder="Message">
             </div>
         </div>
-        <div class="footer__box btn"
-             data-anijs="if:wheel, on:window, do: slideInUp animated,before: scrollReveal, after: removeAnim">
+        <div class="footer__box btn slideInUp wow">
             <button type="button" class="btn__send">
                 send
             </button>
@@ -285,7 +281,5 @@
 </div>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <script src="js/main.js" defer></script>
-<script src="//atmpl.ru/design/scroll-effect/2015/anijs/anijs.js"></script>
-<script src="//atmpl.ru/design/scroll-effect/2015/anijs/anijs-helper-scrollreveal.js"></script>
 </body>
 </html>
