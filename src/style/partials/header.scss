@@ -1,0 +1,148 @@
+.header {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  &__box {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  &__btn {
+    display: none;
+  }
+  &__links {
+    display: flex;
+    width: 110px;
+    justify-content: space-between;
+    margin: 20px 0 0 20px;
+  }
+  &__logo {
+    width: 10%;
+    margin: 40px 0 0 0;
+  }
+  &__lang {
+    display: flex;
+    justify-content: space-around;
+    width: 100px;
+    margin: 20px 20px 0 0;
+    &_link {
+      color: black;
+    }
+  }
+  &__lang_link:hover {
+    color: #23CDFD;
+  }
+  .links-logo {
+    display: block;
+    height: 22px;
+    background-size: 100% 100%;
+  }
+  .facebook {
+    width: 16px;
+    background: url(//www.fifium.dk/wp-content/themes/fifiumdk/./assets/images/svg/facebook.svg) no-repeat;
+  }
+  .twitter {
+    width: 23px;
+    background: url(//www.fifium.dk/wp-content/themes/fifiumdk/./assets/images/svg/twitter.svg) no-repeat;
+  }
+  .instagram {
+    width: 20px;
+    background: url(//www.fifium.dk/wp-content/themes/fifiumdk/./assets/images/svg/instagram.svg) no-repeat;
+  }
+  .linkedin {
+    width: 23px;
+    background: url(//www.fifium.dk/wp-content/themes/fifiumdk/./assets/images/svg/linkedin.svg) no-repeat;
+  }
+  &__navbar {
+    width: 90%;
+    margin-left: 3%;
+  }
+}
+
+.menu {
+  display: flex;
+  justify-content: space-around;
+  text-transform: uppercase;
+  letter-spacing: .05em;
+  font-size: 14px;
+  &__nav {
+    a {
+      color: black;
+    }
+    list-style: none;
+  }
+  &__nav a:hover {
+    color: #23CDFD;
+    transition: 0.5s;
+  }
+}
+
+.toggle {
+  padding: 0;
+  position: relative;
+  background: none;
+  border: none;
+  cursor: pointer;
+  &__bar {
+    display: block;
+    margin-top: 5px;
+    width: 23px;
+    height: 2px;
+    background-color: #23CDFD;
+  }
+}
+
+@media screen and(max-width: 767px) {
+  .header {
+    background: #FAF9F8;
+    &__btn {
+      display: block;
+    }
+    &__links {
+      position: absolute;
+      bottom: 0;
+      left: 35%;
+      padding-bottom: 15px;
+    }
+    &__lang {
+      margin-left: 80%;
+      width: 100%;
+    }
+    &__logo {
+      position: absolute;
+      left: 45%;
+      margin-top: 20px;
+      width: 12%;
+    }
+  }
+
+  .menu {
+    display: none;
+    &__nav {
+      margin-top: 20px;
+    }
+  }
+
+  .header:first-child {
+    width: 100%;
+    height: 115px;
+  }
+
+  .toggle {
+    top: 20px;
+    left: 20px;
+  }
+
+  .nav-extend {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    color: #23CDFD;
+    width: 100%;
+    margin-top: 55px;
+    left: 0;
+    background: rgba(250, 249, 248, 1.7);
+    transition: all 3s ease;
+  }
+}

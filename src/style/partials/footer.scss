@@ -1,0 +1,129 @@
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  line-height: 1.5em;
+  letter-spacing: .08em;
+  margin-top: 100px;
+  &__header {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 70px;
+    text-align: center;
+  }
+  &__box {
+    display: flex;
+    justify-content: inherit;
+    flex-wrap: wrap;
+  }
+}
+
+.contacts {
+  margin: 0 auto;
+  width: 80%;
+  &__container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-left: 20px;
+  }
+}
+
+.box-img {
+  height: 50px;
+  margin-bottom: 40px;
+}
+
+.text {
+  text-align: center;
+}
+
+.email {
+  border-bottom: 3px solid #4CC7ED;
+  width: 70%;
+  margin: 0 auto;
+  position: relative;
+  &__input {
+    border: none;
+    font-size: 22px;
+    color: #000;
+    line-height: 50px;
+  }
+}
+
+.email__input:focus {
+  outline: none;
+}
+
+.input-rect {
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  left: -21px;
+  top: 42px;
+  background: url(//www.fifium.dk/wp-content/themes/fifiumdk/./assets/images/input-rotate-icon.svg) no-repeat;
+  background-size: 100% 100%;
+}
+
+.contact-field {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 40px;
+  margin-top: 50px;
+  div:last-child {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    width: 85%;
+  }
+}
+
+.btn {
+  margin: 30px auto;
+  &__send {
+    font-size: 18px;
+    text-transform: uppercase;
+    width: 226px;
+    height: 56px;
+    cursor: pointer;
+    background: #FAF9F8;
+    border: 2px solid #4CC7ED;
+    margin: 50px 0 150px 0;
+  }
+  &__send:hover {
+    background: linear-gradient(to right, #00d0ff 0, #15adff 100%);
+    transition: all 400ms linear;
+    color: #fff;
+  }
+  &__fixed {
+    position: fixed;
+    height: 70px;
+    width: 70px;
+    bottom: 24px;
+    border-radius: 50%;
+    right: 16px;
+    background: url(../../img/btn.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #52C9EC;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .footer {
+    &__header {
+      font-size: 50px;
+      margin-bottom: 65px;
+    }
+  }
+  .contacts__container {
+    flex-wrap: wrap;
+  }
+  .contact-field {
+    display: flex;
+    flex-direction: column;
+    div:last-child {
+      width: 70%;
+    }
+  }
+}
+

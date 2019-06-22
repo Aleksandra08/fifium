@@ -1,0 +1,287 @@
+.header {
+  display: flex;
+  width: 100%;
+  flex-direction: column; }
+  .header__box {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; }
+  .header__btn {
+    display: none; }
+  .header__links {
+    display: flex;
+    width: 110px;
+    justify-content: space-between;
+    margin: 20px 0 0 20px; }
+  .header__logo {
+    width: 10%;
+    margin: 40px 0 0 0; }
+  .header__lang {
+    display: flex;
+    justify-content: space-around;
+    width: 100px;
+    margin: 20px 20px 0 0; }
+    .header__lang_link {
+      color: black; }
+  .header__lang_link:hover {
+    color: #23CDFD; }
+  .header .links-logo {
+    display: block;
+    height: 22px;
+    background-size: 100% 100%; }
+  .header .facebook {
+    width: 16px;
+    background: url(//www.fifium.dk/wp-content/themes/fifiumdk/./assets/images/svg/facebook.svg) no-repeat; }
+  .header .twitter {
+    width: 23px;
+    background: url(//www.fifium.dk/wp-content/themes/fifiumdk/./assets/images/svg/twitter.svg) no-repeat; }
+  .header .instagram {
+    width: 20px;
+    background: url(//www.fifium.dk/wp-content/themes/fifiumdk/./assets/images/svg/instagram.svg) no-repeat; }
+  .header .linkedin {
+    width: 23px;
+    background: url(//www.fifium.dk/wp-content/themes/fifiumdk/./assets/images/svg/linkedin.svg) no-repeat; }
+  .header__navbar {
+    width: 90%;
+    margin-left: 3%; }
+
+.menu {
+  display: flex;
+  justify-content: space-around;
+  text-transform: uppercase;
+  letter-spacing: .05em;
+  font-size: 14px; }
+  .menu__nav {
+    list-style: none; }
+    .menu__nav a {
+      color: black; }
+  .menu__nav a:hover {
+    color: #23CDFD;
+    transition: 0.5s; }
+
+.toggle {
+  padding: 0;
+  position: relative;
+  background: none;
+  border: none;
+  cursor: pointer; }
+  .toggle__bar {
+    display: block;
+    margin-top: 5px;
+    width: 23px;
+    height: 2px;
+    background-color: #23CDFD; }
+
+@media screen and (max-width: 767px) {
+  .header {
+    background: #FAF9F8; }
+    .header__btn {
+      display: block; }
+    .header__links {
+      position: absolute;
+      bottom: 0;
+      left: 35%;
+      padding-bottom: 15px; }
+    .header__lang {
+      margin-left: 80%;
+      width: 100%; }
+    .header__logo {
+      position: absolute;
+      left: 45%;
+      margin-top: 20px;
+      width: 12%; }
+  .menu {
+    display: none; }
+    .menu__nav {
+      margin-top: 20px; }
+  .header:first-child {
+    width: 100%;
+    height: 115px; }
+  .toggle {
+    top: 20px;
+    left: 20px; }
+  .nav-extend {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    color: #23CDFD;
+    width: 100%;
+    margin-top: 55px;
+    left: 0;
+    background: #faf9f8;
+    transition: all 3s ease; } }
+
+.main__box {
+  display: flex;
+  justify-content: space-between;
+  font-size: 19px;
+  line-height: 1.5em;
+  letter-spacing: .08em;
+  text-align: justify;
+  margin-top: 30px; }
+
+.main__img {
+  width: 100%;
+  margin-top: 30px;
+  background: url(../../img/display.png) no-repeat;
+  background-size: 80%;
+  background-position: top; }
+
+.main__block-text {
+  width: 50%;
+  padding: 0 40px; }
+
+.title {
+  display: flex;
+  flex-direction: column; }
+  .title .box, .title p {
+    padding: 0 40px; }
+
+@media screen and (max-width: 767px) {
+  .main__box {
+    flex-direction: column;
+    width: 100%; }
+  .main__img {
+    margin: 0 auto;
+    width: 65%;
+    height: 210px; }
+  .main__block-text {
+    width: 100%;
+    font-size: 14px;
+    padding: 0 10px; }
+  .title__header {
+    text-align: center; }
+  .title__content {
+    margin-top: 10px; }
+  .title .box, .title p {
+    font-size: 14px;
+    padding: 0 10px; } }
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  line-height: 1.5em;
+  letter-spacing: .08em;
+  margin-top: 100px; }
+  .footer__header {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 70px;
+    text-align: center; }
+  .footer__box {
+    display: flex;
+    justify-content: inherit;
+    flex-wrap: wrap; }
+
+.contacts {
+  margin: 0 auto;
+  width: 80%; }
+  .contacts__container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-left: 20px; }
+
+.box-img {
+  height: 50px;
+  margin-bottom: 40px; }
+
+.text {
+  text-align: center; }
+
+.email {
+  border-bottom: 3px solid #4CC7ED;
+  width: 70%;
+  margin: 0 auto;
+  position: relative; }
+  .email__input {
+    border: none;
+    font-size: 22px;
+    color: #000;
+    line-height: 50px; }
+
+.email__input:focus {
+  outline: none; }
+
+.input-rect {
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  left: -21px;
+  top: 42px;
+  background: url(//www.fifium.dk/wp-content/themes/fifiumdk/./assets/images/input-rotate-icon.svg) no-repeat;
+  background-size: 100% 100%; }
+
+.contact-field {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 40px;
+  margin-top: 50px; }
+  .contact-field div:last-child {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    width: 85%; }
+
+.btn {
+  margin: 30px auto; }
+  .btn__send {
+    font-size: 18px;
+    text-transform: uppercase;
+    width: 226px;
+    height: 56px;
+    cursor: pointer;
+    background: #FAF9F8;
+    border: 2px solid #4CC7ED;
+    margin: 50px 0 150px 0; }
+  .btn__send:hover {
+    background: linear-gradient(to right, #00d0ff 0, #15adff 100%);
+    transition: all 400ms linear;
+    color: #fff; }
+  .btn__fixed {
+    position: fixed;
+    height: 70px;
+    width: 70px;
+    bottom: 24px;
+    border-radius: 50%;
+    right: 16px;
+    background: url(../../img/btn.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #52C9EC; }
+
+@media screen and (max-width: 800px) {
+  .footer__header {
+    font-size: 50px;
+    margin-bottom: 65px; }
+  .contacts__container {
+    flex-wrap: wrap; }
+  .contact-field {
+    display: flex;
+    flex-direction: column; }
+    .contact-field div:last-child {
+      width: 70%; } }
+
+body {
+  margin: 0;
+  padding: 0; }
+
+a {
+  text-decoration: none; }
+
+* {
+  box-sizing: border-box;
+  font-family: 'Lato', sans-serif; }
+
+#particles-js {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1; }
+
+#page-wrapper {
+  position: relative;
+  z-index: 2; }
